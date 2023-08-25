@@ -86,6 +86,9 @@ class ErrorMessage(Exception):
             return '%s: %s' % (self.name, val)
         else:
             return ''
+            
+class ErrorMessageQuery(Code):
+    return Code
 
 
 class UsageError(ErrorMessage):
